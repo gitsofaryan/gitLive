@@ -45,27 +45,27 @@ function UsersTab() {
     return (
         <div className="flex flex-col p-4" style={{ height: tabHeight }}>
             <h1 className="tab-title">Users</h1>
-            {/* List of connected users */}
+            Connected Users
             <Users />
             <div className="flex flex-col items-center gap-4 pt-4">
-                <div className="flex w-full gap-4">
-                    {/* Share URL button */}
+                <div className="flex grid-flow-row w-full gap-4">
+
                     <button
-                        className="flex flex-grow justify-center rounded-md bg-white p-3 text-black"
+                        className="flex flex-grow justify-center rounded-md bg-yellow-400 p-3 text-black"
                         onClick={shareURL}
                         title="Share Link"
                     >
                         <Export size={26} />
                     </button>
-                    {/* Copy URL button */}
+
                     <button
-                        className="flex flex-grow justify-center rounded-md bg-white p-3 text-black"
+                        className="flex flex-grow justify-center rounded-md bg-red-400 p-3 text-black"
                         onClick={copyURL}
                         title="Copy Link"
                     >
                         <Copy size={26} />
                     </button>
-                    {/* Leave room button */}
+
                     <button
                         className="flex flex-grow justify-center rounded-md bg-primary p-3 text-black"
                         onClick={leaveRoom}

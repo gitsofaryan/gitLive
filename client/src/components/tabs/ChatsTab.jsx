@@ -10,7 +10,7 @@ function ChatsTab() {
             className="flex max-h-full min-h-[400px] w-full flex-col gap-2 p-4"
             style={{ height: tabHeight }}
         >
-            <h1 className="tab-title">Group Chat</h1>
+            <h1 className="tab-title">Group Chat | Ask a Doubt</h1>
             {/* Chat list */}
             <ChatList />
             {/* Chat input */}
